@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+// import './App.css';
+// import Header from './components/Header';
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <Header></Header>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+// App.js
+import React from "react";
+import Header from "./components/Header";
+import HeroSection from "./components/Hero";
+import RecentPosts from "./components/RecentPosts";
+import FeaturedWorks from "./components/FeaturedWorks";
+import Footer from "./components/Footer";
+import "./index.css";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={mainStyle}>
+      <Header />
+      <HeroSection />
+      <RecentPosts />
+      <FeaturedWorks />
+      <Footer />
     </div>
   );
+};
+const mainStyle ={
+  padding: "0 100px"
 }
-
 export default App;
