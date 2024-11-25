@@ -2,7 +2,6 @@
 import React from "react";
 
 const works = [
-  { year: 2020, title: "Designing Dashboards", category: "Dashboard", image: "logo192.png" },
   { year: 2018, title: "Live Guru", category: "Illustration", image: "/assets/liveguru.png" },
   { year: 2018, title: "CMST", category: "Typography", image: "/assets/CMST.png" },
 ];
