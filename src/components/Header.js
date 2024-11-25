@@ -1,13 +1,13 @@
 // components/Header.js
 import React from "react";
+import { NavLink } from "react-router-dom"
 
 const Header = () => {
   return (
     <header style={headerStyle}>
       <nav style={navStyle}>
-        <a onClick={()=>console.log('Clicked')} href="#works">Works</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
+        <NavLink key='/blogs' to="/blogs" >Blogs</NavLink>
+        <NavLink key='/contact' to="/contact" >Contact</NavLink>
       </nav>
     </header>
   );

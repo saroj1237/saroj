@@ -1,6 +1,7 @@
 import React from "react";
 
 const HeroSection = () => {
+  
   return (
     <section style={heroStyle}>
       <div style={contentStyle}>
@@ -10,7 +11,7 @@ const HeroSection = () => {
         Skilled in creating dynamic, user-friendly applications with seamless backend integration.
         Passionate about crafting innovative solutions and delivering exceptional user experiences.
         </p>
-        <button style={buttonStyle}>Download Resume</button>
+        <button style={buttonStyle} onClick={()=>downloadResme()} >Download Resume</button>
       </div>
       <img 
         src="/assets/profile-image.jpg" 
@@ -20,6 +21,12 @@ const HeroSection = () => {
     </section>
   );
 };
+const downloadResme=()=>{
+  const link = document.createElement("a");
+    link.href = "/assets/sarojbasnetCV.pdf"; 
+    link.download = "sarojbasnetCV.pdf"; 
+    link.click();
+}
 
 const heroStyle = { 
   display: "flex", 
