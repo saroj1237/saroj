@@ -4,16 +4,19 @@ import { NavLink } from "react-router-dom"
 
 const Header = () => {
   return (
-    <header style={headerStyle}>
+  
       <nav style={navStyle}>
-        <NavLink key='/blogs' to="/blogs" >Blogs</NavLink>
-        <NavLink key='/contact' to="/contact" >Contact</NavLink>
+        <NavLink style={{}} key='/' to="/" >Home</NavLink>
+        <NavLink style={{}} key='/blogs' to="/blogs" >Blogs</NavLink>
+        <NavLink style={{}} key='/contact' to="/contact" >Contact</NavLink>
       </nav>
-    </header>
+
   );
 };
+const navStyle = {
+width: '100%', display: "flex", 
+  justifyContent:"end", alignItems:"end", padding: "24px 100px" , gap:'60px',
+  flexWrap:'wrap'
 
-const headerStyle = { display: "flex", justifyContent: "flex-end", padding: "1rem 0" };
-const navStyle = { gap: "1rem", display: "flex" };
-
+};
 export default Header;
