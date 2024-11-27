@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <footer style={footerStyle}>
       <div>
-        <a style = {itemStyle} href="https://www.facebook.com/profile.php?id=100088827132285" target="_blank" rel="noreferrer" >
-        <img alt="facebook" style={imageStyle} src= "https://img.icons8.com/?size=100&id=118497&format=png&color=000000" /></a>
+        <a style = {itemStyle} href="https://github.com/saroj1237" target="_blank" rel="noreferrer" >
+        <img alt="facebook" style={imageStyle} src= "https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000" /></a>
         <a style = {itemStyle} href="https://x.com/saroj1237" target="_blank" rel="noreferrer" > 
         <img alt="linkedin" style={imageStyle} src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000"/> </a>
         <a style = {itemStyle} href="https://www.linkedin.com/in/saroj-basnet-54a50420b/" target="_blank" rel="noreferrer" >
