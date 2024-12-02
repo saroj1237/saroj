@@ -5,6 +5,7 @@ const Home = () => {
     return <div style={homeStyle}>
         <Hero />
         <RecentPosts />
+      
         <FeaturedWorks />
     </div>
 }
