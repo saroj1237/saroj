@@ -9,7 +9,7 @@ const works = [
   },
   {
     year: "2023/2024", title: "CMST", category: "Susankya Global LLC",
-    image: "/assets/CMST.png",
+    image: "/assets/cmst.png",
     description: "Consultancy Manager is a full-featured web portal designed to handle day-to-day activities at an educational consultancy. It helps save all the trouble of organizing and maintaining various kinds of resources that are stumbled upon on a regular basis. It enables the consultancy to go paperless and efficient with managing records and follow-ups.",
   },
 ];
