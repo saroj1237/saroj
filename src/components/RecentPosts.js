@@ -2,8 +2,8 @@
 import React from "react";
 
 const posts = [
-  { title: "Making a design system from scratch", date: "12 Feb 2020", category: "Design, Pattern" },
-  { title: "Creating pixel perfect icons in Figma", date: "12 Feb 2020", category: "Figma, Icon Design" },
+  { title: "AdMob Monetization in Flutter", date: "12 Feb 2024", category: "Flutter App" },
+  { title: "Integrating Alibaba Video Player Sdk in Flutter App", date: "02 Oct 2024", category: "Flutter App" },
 ];
 
 const RecentPosts = () => {
