@@ -1,0 +1,45 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 100px;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 60px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #ff5a5f;
+  }
+  
+  /* Hide the menu on smaller screens by default */
+  .navbar-links.hidden {
+    display: none;
+  }
+  
+  /* Media query for mobile view */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 16px 20px;
+      background-color: #000;
+    }
+    .hamburger {
+      display: block;
+      background: none;
+      border: none;
+      color:#000;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
+  
