@@ -20,7 +20,7 @@ const FeaturedWorks = () => {
       <h2>Featured works</h2>
       {works.map((work, index) => (
         <div key={index} style={workStyle}>
-          <img src={work.image} alt={work.title} style={{ width: "150px", height: "150px",objectFit: "contain", borderRadius: "8px" }} />
+          <img src={work.image} alt={work.title} style={{ width: "150px", height: "150px", objectFit: "contain", borderRadius: "8px" }} />
           <div>
             <h3>{work.title}</h3>
             <p>{work.year} | {work.category}</p>
