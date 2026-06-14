@@ -1,5 +1,4 @@
-import React from "react";
-import "./Hero.css";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   const downloadResume = () => {
@@ -10,24 +9,40 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="hero-section">
-      <div className="hero-content">
-        <h1>Hi, I am Saroj Basnet, Mobile App Developer</h1>
-        <p className="hero-text">
-          Dedicated Mobile App Developer with expertise in Flutter and Dart.
-          Skilled in creating dynamic, user-friendly applications with seamless
-          backend integration. Passionate about crafting innovative solutions
-          and delivering exceptional user experiences.
-        </p>
-        <button className="hero-button" onClick={downloadResume}>
-          Download Resume
-        </button>
+    <section className="section-container">
+      <div className="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12">
+        <div className="flex-1 text-center md:text-left">
+          <p className="text-accent text-sm font-medium mb-3">
+            Mobile App Developer
+          </p>
+          <h1 className="mb-4">
+            Hi, I&apos;m{" "}
+            <span className="text-accent">Saroj Basnet</span>
+          </h1>
+          <p className="text-muted leading-relaxed max-w-xl mb-6">
+            Dedicated Mobile App Developer with expertise in Flutter and Dart.
+            Skilled in creating dynamic, user-friendly applications with seamless
+            backend integration. Passionate about crafting innovative solutions
+            and delivering exceptional user experiences.
+          </p>
+          <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+            <button className="btn-primary" onClick={downloadResume}>
+              Download Resume
+            </button>
+            <Link to="/contact" className="btn-outline">
+              Get in Touch
+            </Link>
+          </div>
+        </div>
+
+        <div className="shrink-0">
+          <img
+            src="/assets/profile-image.jpg"
+            alt="Saroj Basnet"
+            className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-surface shadow-md"
+          />
+        </div>
       </div>
-      <img
-        src="/assets/profile-image.jpg"
-        alt="Saroj Basnet"
-        className="hero-image"
-      />
     </section>
   );
 };

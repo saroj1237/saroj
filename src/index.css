@@ -1,3 +1,64 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+  --color-surface: #ffffff;
+  --color-muted: #64748b;
+  --color-border: #e2e8f0;
+  --color-bg: #f8fafc;
+  --color-text: #0f172a;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg text-text font-sans antialiased;
+  }
+
+  h1 {
+    @apply text-3xl md:text-4xl font-semibold tracking-tight leading-tight;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold tracking-tight;
+  }
+
+  h3 {
+    @apply text-lg font-medium;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-5xl mx-auto px-5 md:px-8;
+  }
+
+  .section-title {
+    @apply text-2xl font-semibold mb-6 pb-2 border-b border-border;
+  }
+
+  .card {
+    @apply bg-surface border border-border rounded-xl p-5 md:p-6;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-5 py-2.5 rounded-lg bg-accent text-white text-sm font-medium transition-colors duration-200 hover:bg-accent-hover;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-5 py-2.5 rounded-lg border border-border text-sm font-medium transition-colors duration-200 hover:border-accent hover:text-accent;
+  }
+
+  .nav-link {
+    @apply text-sm font-medium text-muted transition-colors duration-200 hover:text-accent;
+  }
+
+  .nav-link.active {
+    @apply text-accent;
+  }
+}
